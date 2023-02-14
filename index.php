@@ -23,7 +23,7 @@
     if($db_conn->connect_error){
         echo "Database connection failed: " . $db_conn->connect_error;
     }else{
-        echo "Success>br />";
+        echo "Successful>br />";
     }
     
     ?>
