@@ -13,8 +13,20 @@
 
     echo "<p>Start of php</p>";
 
-     
-        ?>
+    $servername = "localhost";
+    $username = "steverq1_dev";
+    $password = "Csci213+#006";
+    $dbname = "steverq1_devdb";
+
+    $db_conn = new mysqli($servername, $username, $password, $dbname);
+
+    if($db_conn->connect_error){
+        echo "Database connection failed: " . $db_conn->connect_error;
+    }else{
+        echo "Success>br />";
+    }
+    
+    ?>
         
 </body>
 </html>
