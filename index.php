@@ -23,7 +23,16 @@
     if($db_conn->connect_error){
         echo "Database connection failed: " . $db_conn->connect_error;
     }else{
-        echo "Successful>br />";
+        echo "Successful<br />";
+    }
+
+    $result = $db_conn->query("SELECT * FROM menuItems;");
+
+    if(!$result){
+        echo "error on query<br />";
+    }
+    else{
+        echo "Query good!<br/>";
     }
     
     ?>
