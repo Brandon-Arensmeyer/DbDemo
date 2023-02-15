@@ -1,0 +1,6 @@
+INSERT INTO customer VALUES(
+    null,
+    'Brandon',
+    'Arensmeyer',
+    'barensmeyer@live.com'
+);

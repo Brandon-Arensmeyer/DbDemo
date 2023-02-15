@@ -28,7 +28,7 @@
 
 
 
-    $result = $db_conn->query("SELECT * FROM menuItems;");
+    $result = $db_conn->query("SELECT * FROM customer;");
 
     if(!$result){
         echo "error on query<br />";
