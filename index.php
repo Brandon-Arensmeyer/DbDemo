@@ -38,9 +38,15 @@
     }
 
     while($row = $result->fetch_assoc()){
-        print_r($row);       
-        $item = $row['cust_id'];
-        echo $item;
+        #print_r($row);       
+        $id = $row['cust_id'];
+        $first = $row('cust_fname');
+        $last = $row('cust_lname');
+        $email = $row('cust_email');
+        echo $id;
+        echo $first;
+        echo $last;
+        echo $email;
         echo "<br/>";
     }
 
