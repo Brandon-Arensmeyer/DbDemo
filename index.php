@@ -28,7 +28,7 @@
 
 
 
-    $result = $db_conn->query("SELECT * FROM cmer;");
+    $result = $db_conn->query("SELECT * FROM customer;");
 
     if(!$result){
         echo "error on query<br />";
@@ -39,8 +39,8 @@
 
     while($row = $result->fetch_assoc()){
         print_r($row);       
-        $item = $row['description'];
-        echo $item;
+        $item = $row['customer'];
+        echo $item->cust_id();
         echo "<br/>";
     }
 
