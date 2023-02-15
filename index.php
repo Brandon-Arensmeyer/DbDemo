@@ -40,7 +40,9 @@
     while($row = $result->fetch_assoc()){
         print_r($row);       
         $item = $row['cust_id'];
+        $name = $row['cust_fname'];
         echo $item;
+        echo $name;
         echo "<br/>";
     }
 
