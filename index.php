@@ -40,9 +40,13 @@
     while($row = $result->fetch_assoc()){
         print_r($row);       
         $item = $row['cust_id'];
-        $name = $row['cust_fname'];
-        echo $item;
-        echo $name;
+        $first = $row['cust_fname'];
+        $last = $row['cust_lname'];
+        $email = $row['cust_email'];
+        echo $item + " " + $first + " " + $last + " " + $email;
+        // echo $first;
+        // echo $last;
+        // echo $email;
         echo "<br/>";
     }
 
