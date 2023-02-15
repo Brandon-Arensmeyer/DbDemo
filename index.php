@@ -39,8 +39,8 @@
 
     while($row = $result->fetch_assoc()){
         print_r($row);       
-        $item = $row['customer'];
-        echo $item->cust_id();
+        $item = $row['cust_id'];
+        echo $item;
         echo "<br/>";
     }
 
