@@ -28,7 +28,7 @@
 
 
 
-    $result = $db_conn->query("SELECT * FROM customer;");
+    $result = $db_conn->query("SELECT * FROM cmer;");
 
     if(!$result){
         echo "error on query<br />";
