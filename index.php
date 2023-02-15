@@ -43,7 +43,7 @@
         $first = $row['cust_fname'];
         $last = $row['cust_lname'];
         $email = $row['cust_email'];
-        echo $item + " " + $first + " " + $last + " " + $email;
+        echo $item . " " . $first . " " . $last . " " . $email;
         // echo $first;
         // echo $last;
         // echo $email;
