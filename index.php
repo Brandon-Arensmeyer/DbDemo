@@ -37,18 +37,21 @@
         echo "Query good!<br/>";
     }
 
+    echo "<table align='left' border='1' style='width:25%'>";
     while($row = $result->fetch_assoc()){
-        print_r($row);       
-        $item = $row['cust_id'];
+        // print_r($row);       
+        $id = $row['cust_id'];
         $first = $row['cust_fname'];
         $last = $row['cust_lname'];
         $email = $row['cust_email'];
-        echo $item . " " . $first . " " . $last . " " . $email;
-        // echo $first;
-        // echo $last;
-        // echo $email;
-        echo "<br/>";
+        echo "<tr>";
+        echo "<td>$id</td>";
+        echo "<td>$first</td>";
+        echo "<td>$last</td>";
+        echo "<td>$email</td>";
+        echo "</tr>";
     }
+    echo "</table>"
 
 
     ?>
