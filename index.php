@@ -11,7 +11,7 @@
 <h2>DB Connections</h2>
     <?php
 
-    echo "<p>Start of php</p>";
+    echo "<p>😀Start of php</p>";
 
     $servername = "localhost";
     $username = "steverq1_dev";
